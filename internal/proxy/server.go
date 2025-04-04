@@ -53,7 +53,6 @@ func NewProxyListener(port string) *ProxyListener {
     }
 }
 
-// StartProxy инициализирует и запускает MITM-прокси сервер
 func StartProxy(port string) error {
     proxyListener := NewProxyListener(port)
     return proxyListener.serve()
